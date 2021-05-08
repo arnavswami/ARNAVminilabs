@@ -2,14 +2,17 @@ package com.arnav.minilabs;
 
 public class HSStudent extends Student {
     int gradeLevel;
-
+    public HSStudent(){
+        super("HS NO NAME");
+        gradeLevel = 9;
+    }
     public HSStudent(String n, int l) {
         super(n);
         gradeLevel = l;
     }
 
     public Boolean registerforclass(String className) {
-        System.out.println("Registering for " + className);
+        System.out.println("Registering " + name + " for " + className + " in grade " + gradeLevel);
         if (getParentApproval()) {
             System.out.println("I got parent approval now I need to get counselor approval.");
             if (getCounselorApprval()) {

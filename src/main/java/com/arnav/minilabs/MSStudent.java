@@ -10,7 +10,7 @@ public class MSStudent extends Student {
     }
 
     public Boolean registerforclass(String className) {
-        System.out.println("Registering for " + className);
+        System.out.println("Registering " + name + " for " + className + " in grade " + gradeLevel);
         if (getParentApproval()) {
             return Boolean.TRUE;
         }
